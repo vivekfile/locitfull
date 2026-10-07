@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Locit</title>
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <nav class="navbar">
+                <div class="logo-image">
+                    <img src="/assets/logo1.png" alt="Locit Logo">
+                </div>
+                <div class="sign-up-option">
+                    <a href="/sign-up/sign-up.html">Don't have an account? <span>Sign Up</span></a>
+                </div>
+
+
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="main-card">
+                <div class="welcome-ist">
+                    <h1>Welcome to Locit! 👋</h1>
+                    <div class="istr">
+                        <p>Your one-stop solution for all your needs. Please log in to continue.</p>
+                    </div>
+                </div>
+
+                <div class="auth-form">
+                    <div class="email-phone">
+                        <label>Email or Phone Number</label>
+                        <div class="phone-email-input">
+                            <input type="text" id="loginIdentifier" required placeholder="Enter your email or phone number">
+                        </div>
+                    </div>
+                    <div class="password">
+                        <label>Password</label>
+                        <div class="password-input">
+                            <input type="password" id="loginPassword" required placeholder="Enter your password">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <label>
+                            <input type="checkbox" class="remember"> Remember me
+                        </label>
+                        <a class="remember-a" href="#">Forgot password?</a>
+                    </div>
+                    <p id="loginError" style="display:none;color:#c0392b;margin-top:12px;"></p>
+                </div>
+                <div class="login-button">
+                    <button class="login-button-btn" type="button">Log In</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/config.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>

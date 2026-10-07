@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Locit Seller Dashboard</title>
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet"
+        href="seller-dashboard-style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="top">
+
+            <div class="logo">
+
+                <img src="/assets/logo1.png"
+                    alt="">
+
+            </div>
+
+            <div class="ex-logo">
+
+                <div class="seller-head">
+
+                    <p>Seller Dashboard</p>
+
+                </div>
+
+                <div class="top-right">
+
+                    <div class="notification">
+                        🔔
+                    </div>
+
+                    <div class="messages">
+                        💬
+                    </div>
+
+                    <div class="user-info">
+
+                        <img src="https://i.pravatar.cc/100?img=12"
+                            alt="">
+
+                        <div class="usernamen-oc">
+
+                            <p id="user-name">
+                                Rakesh
+                            </p>
+
+                            <p>
+                                Premium Seller
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <section class="main-content">
+
+        <div class="contentnnav">
+
+            <!-- ================= SIDEBAR ================= -->
+
+            <div class="left-nav">
+
+                <ul>
+
+                    <li class="nav-active">
+                        <a href="#">
+                            🏠 Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            📦 Orders & Bookings
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            💬 Messages
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            👤 Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            ⭐ Reviews
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            ⚙ Settings
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            ❓ Help & Support
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- premium card -->
+
+                <div class="premium-seller-card">
+
+                    <div class="premium-logo">
+                        👑
+                    </div>
+
+                    <div class="premium-seller-des">
+
+                        <p>
+                            Become a Premium Seller
+                        </p>
+
+                        <p>
+                            Get more visibility and grow your business
+                        </p>
+
+                    </div>
+
+                    <div class="upgrade-btn">
+
+                        <button>
+                            Upgrade Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================= CONTENT ================= -->
+
+            <div class="content-seller">
+
+                <!-- ================= STATS ================= -->
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <p>Total Revenue</p>
+
+                        <h2>₹24,500</h2>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <p>Orders</p>
+
+                        <h2>145</h2>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <p>Products</p>
+
+                        <h2>38</h2>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <p>Profile Views</p>
+
+                        <h2>1.8K</h2>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= LISTING ================= -->
+
+                <p class="main-heading">
+                    Add new Listing
+                </p>
+
+                <p class="sub-heading">
+                    Choose what kind of product or service you want to list
+                </p>
+
+                <!-- ================= PROGRESS BAR ================= -->
+
+                <div class="listing-progress-bar">
+
+                    <div class="pbar active-step">
+
+                        <div class="progressncircle">
+                            1
+                        </div>
+
+                        <p>
+                            Choose Type
+                        </p>
+
+                    </div>
+
+                    <div class="carryl"></div>
+
+                    <div class="pbar">
+
+                        <div class="progressncircle">
+                            2
+                        </div>
+
+                        <p>
+                            Listing Details
+                        </p>
+
+                    </div>
+
+                    <div class="carryl"></div>
+
+                    <div class="pbar">
+
+                        <div class="progressncircle">
+                            3
+                        </div>
+
+                        <p>
+                            Location
+                        </p>
+
+                    </div>
+
+                    <div class="carryl"></div>
+
+                    <div class="pbar">
+
+                        <div class="progressncircle">
+                            4
+                        </div>
+
+                        <p>
+                            Review & Publish
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= FORM ================= -->
+
+                <div class="seller-listings">
+
+                    <div class="actual-details">
+
+                        <div class="nameNnumber">
+
+                            <div class="input-group">
+
+                                <label>
+                                    Choose a category
+                                </label>
+
+                                <select id="productCategory">
+
+                                    <option>
+                                        Products
+                                    </option>
+
+                                    <option>
+                                        Rentals
+                                    </option>
+
+                                    <option>
+                                        Food & Grocery
+                                    </option>
+
+                                    <option>
+                                        Services
+                                    </option>
+                                    <option>
+                                        Others
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+                                    Name of Product
+                                </label>
+
+                                <input type="text"
+                                    id="productName"
+                                    placeholder="Enter Product Name">
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+                                    Value in ₹
+                                </label>
+
+                                <input type="number"
+                                    id="productPrice"
+                                    placeholder="Enter Product Price">
+
+                            </div>
+
+                        </div>
+
+                        <div class="whatsappNemail">
+
+                            <div class="input-group">
+
+                                <label>
+                                    About Product
+                                </label>
+
+                                <textarea
+                                    id="productDescription"
+                                    placeholder="Write details about your product"></textarea>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+                                    Upload Product Image
+                                </label>
+
+                                <div class="upload-box">
+
+                                    📷 Upload Image
+
+                                    <input type="file">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= SELLER DETAILS ================= -->
+
+                <div class="seller-details">
+
+                    <p class="details-heading">
+                        Seller Contact Details
+                    </p>
+
+                    <p class="details-subheading">
+                        This information will be visible to customers
+                    </p>
+
+                    <div class="actual-details">
+
+                        <div class="nameNnumber">
+
+                            <div class="input-group">
+
+                                <label>
+                                    Full Name
+                                </label>
+
+                                <input type="text"
+                                    placeholder="Seller Name">
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+                                    Mobile Number
+                                </label>
+
+                                <input type="number"
+                                    placeholder="Contact Number">
+
+                            </div>
+
+                        </div>
+
+                        <div class="whatsappNemail">
+
+                            <div class="input-group">
+
+                                <label>
+                                    Whatsapp Number
+                                </label>
+
+                                <input type="number"
+                                    placeholder="Whatsapp Number">
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+                                    Email Address
+                                </label>
+
+                                <input type="email"
+                                    placeholder="Enter Email">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="seller-review-save">
+
+                        <button>
+                            Save & Review
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="listed-stuff">
+
+        <div class="listed-items">
+
+            <p>Your Offerings</p>
+
+            <div class="products-grid">
+
+                <!-- PRODUCT -->
+
+                <div class="product-card">
+
+                    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=1200&auto=format&fit=crop"
+                        alt="">
+
+                    <div class="product-info">
+
+                        <div class="product-top">
+
+                            <span class="category-badge">
+                                Grocery
+                            </span>
+
+                            <span class="price">
+                                ₹14
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Maggi 2-Minute Noodles
+                        </h3>
+
+                        <p>
+                            Stock Available : 10 Units
+                        </p>
+
+                        <div class="product-actions">
+
+                            <button class="edit-btn">
+                                Edit
+                            </button>
+
+                            <button class="delete-btn">
+                                Delete
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="product-card">
+
+                    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=1200&auto=format&fit=crop"
+                        alt="">
+
+                    <div class="product-info">
+
+                        <div class="product-top">
+
+                            <span class="category-badge">
+                                Grocery
+                            </span>
+
+                            <span class="price">
+                                ₹14
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Maggi 2-Minute Noodles
+                        </h3>
+
+                        <p>
+                            Stock Available : 10 Units
+                        </p>
+
+                        <div class="product-actions">
+
+                            <button class="edit-btn">
+                                Edit
+                            </button>
+
+                            <button class="delete-btn">
+                                Delete
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="product-card">
+
+                    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=1200&auto=format&fit=crop"
+                        alt="">
+
+                    <div class="product-info">
+
+                        <div class="product-top">
+
+                            <span class="category-badge">
+                                Grocery
+                            </span>
+
+                            <span class="price">
+                                ₹14
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Maggi 2-Minute Noodles
+                        </h3>
+
+                        <p>
+                            Stock Available : 10 Units
+                        </p>
+
+                        <div class="product-actions">
+
+                            <button class="edit-btn">
+                                Edit
+                            </button>
+
+                            <button class="delete-btn">
+                                Delete
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="product-card">
+
+                    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=1200&auto=format&fit=crop"
+                        alt="">
+
+                    <div class="product-info">
+
+                        <div class="product-top">
+
+                            <span class="category-badge">
+                                Grocery
+                            </span>
+
+                            <span class="price">
+                                ₹14
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Maggi 2-Minute Noodles
+                        </h3>
+
+                        <p>
+                            Stock Available : 10 Units
+                        </p>
+
+                        <div class="product-actions">
+
+                            <button class="edit-btn">
+                                Edit
+                            </button>
+
+                            <button class="delete-btn">
+                                Delete
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCT -->
+
+                <div class="product-card">
+
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop"
+                        alt="">
+
+                    <div class="product-info">
+
+                        <div class="product-top">
+
+                            <span class="category-badge">
+                                Fashion
+                            </span>
+
+                            <span class="price">
+                                ₹2499
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Running Shoes
+                        </h3>
+
+                        <p>
+                            Stock Available : 5 Units
+                        </p>
+
+                        <div class="product-actions">
+
+                            <button class="edit-btn">
+                                Edit
+                            </button>
+
+                            <button class="delete-btn">
+                                Delete
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCT -->
+
+                <div class="product-card">
+
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop"
+                        alt="">
+
+                    <div class="product-info">
+
+                        <div class="product-top">
+
+                            <span class="category-badge">
+                                Electronics
+                            </span>
+
+                            <span class="price">
+                                ₹899
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Smart Watch
+                        </h3>
+
+                        <p>
+                            Stock Available : 3 Units
+                        </p>
+
+                        <div class="product-actions">
+
+                            <button class="edit-btn">
+                                Edit
+                            </button>
+
+                            <button class="delete-btn">
+                                Delete
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FLOATING BUTTON ================= -->
+
+    <button class="floating-btn">
+        +
+    </button>
+
+    <script src="/js/config.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/seller-dashboard.js"></script>
+</body>
+
+</html>

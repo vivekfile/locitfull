@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f7ffff;
+}
+
+/* ================= HEADER ================= */
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 28px;
+    background:rgba(255,255,255,0.7);
+    backdrop-filter:blur(14px);
+    position:sticky;
+    top:0;
+    z-index:100;
+    border-bottom:1px solid #d9f8f5;
+}
+
+.logo img{
+    height:40px;
+}
+
+.ex-logo{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.seller-head p{
+    font-size:24px;
+    font-weight:700;
+}
+
+.top-right{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.notification,
+.messages{
+    background:white;
+    padding:10px;
+    border-radius:12px;
+    cursor:pointer;
+    box-shadow:0 4px 14px rgba(0,0,0,0.06);
+}
+
+.user-info{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:white;
+    padding:8px 14px;
+    border-radius:14px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.06);
+}
+
+.user-info img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+
+.usernamen-oc p:nth-child(1){
+    font-weight:600;
+}
+
+.usernamen-oc p:nth-child(2){
+    font-size:12px;
+    color:gray;
+}
+
+/* ================= LAYOUT ================= */
+
+.contentnnav{
+    display:flex;
+    gap:30px;
+    padding:25px;
+}
+
+/* ================= SIDEBAR ================= */
+
+.left-nav{
+    width:250px;
+}
+
+.left-nav ul li{
+    list-style:none;
+    margin-bottom:12px;
+}
+
+.left-nav ul li a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:black;
+    padding:14px;
+    background:white;
+    border-radius:14px;
+    transition:0.3s;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.left-nav ul li a:hover,
+.nav-active a{
+    background:#c7fffb;
+    transform:translateX(5px);
+}
+
+/* ================= PREMIUM CARD ================= */
+
+.premium-seller-card{
+    margin-top:25px;
+    background:#d5fffb;
+    padding:22px;
+    border-radius:18px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.premium-logo{
+    font-size:40px;
+}
+
+.premium-seller-des p:nth-child(1){
+    font-weight:700;
+    color:#008080;
+    margin:8px 0;
+}
+
+.premium-seller-des p:nth-child(2){
+    font-size:13px;
+    color:#555;
+}
+
+.upgrade-btn button{
+    margin-top:18px;
+    width:100%;
+    border:none;
+    background:#00b7b7;
+    color:white;
+    padding:12px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.upgrade-btn button:hover{
+    background:#009d9d;
+}
+
+/* ================= CONTENT ================= */
+
+.content-seller{
+    flex:1;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+    margin-bottom:30px;
+}
+
+.stat-card{
+    background:white;
+    padding:22px;
+    border-radius:18px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-5px);
+}
+
+.stat-card p{
+    color:#6b7280;
+    font-size:14px;
+}
+
+.stat-card h2{
+    margin-top:10px;
+    color:#00a5a5;
+}
+
+.main-heading{
+    font-size:28px;
+    font-weight:700;
+}
+
+.sub-heading{
+    margin-top:6px;
+    color:gray;
+    margin-bottom:25px;
+}
+
+/* ================= PROGRESS ================= */
+
+.listing-progress-bar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.pbar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.progressncircle{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:#d5fffb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:600;
+}
+
+.active-step .progressncircle{
+    background:#00b7b7;
+    color:white;
+}
+
+.carryl{
+    width:70px;
+    height:2px;
+    background:#ccc;
+}
+
+/* ================= FORMS ================= */
+
+.seller-listings,
+.seller-details{
+    background:white;
+    padding:28px;
+    border-radius:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+    margin-bottom:28px;
+}
+
+.actual-details{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.input-group label{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+input,
+textarea,
+select{
+    padding:14px;
+    border-radius:14px;
+    border:1px solid #d6d6d6;
+    outline:none;
+    background:#fafafa;
+    transition:0.3s;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color:#00b7b7;
+    box-shadow:0 0 0 4px rgba(0,183,183,0.15);
+    background:white;
+}
+
+/* ================= UPLOAD ================= */
+
+.upload-box{
+    border:2px dashed #bcecec;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    cursor:pointer;
+    background:#f9ffff;
+}
+
+.upload-box input{
+    margin-top:15px;
+}
+
+/* ================= SELLER DETAILS ================= */
+
+.details-heading{
+    font-size:24px;
+    font-weight:700;
+}
+
+.details-subheading{
+    color:gray;
+    margin:6px 0 25px;
+}
+
+.seller-review-save{
+    display:flex;
+    justify-content:center;
+    margin-top:25px;
+}
+
+.seller-review-save button{
+    border:none;
+    background:#00b7b7;
+    color:white;
+    padding:14px 30px;
+    border-radius:14px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.seller-review-save button:hover{
+    background:#009d9d;
+}
+
+/* ================= PRODUCTS ================= */
+
+.listed-stuff{
+    padding:0 25px 40px;
+}
+
+.listed-items p{
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+}
+
+.product-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    transition:0.3s;
+    max-width:240px;
+}
+
+.product-card:hover{
+    transform:translateY(-4px);
+}
+
+.product-card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:14px;
+}
+
+.product-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.category-badge{
+    background:#d5fffb;
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:10px;
+    color:#008080;
+    font-weight:600;
+}
+
+.price{
+    color:#00a5a5;
+    font-size:18px;
+    font-weight:700;
+}
+
+.product-info h3{
+    margin-bottom:6px;
+    font-size:16px;
+}
+
+.product-info p{
+    color:gray;
+    margin-bottom:14px;
+    font-size:12px;
+}
+
+.product-actions{
+    display:flex;
+    gap:8px;
+}
+
+.edit-btn,
+.delete-btn{
+    flex:1;
+    border:none;
+    padding:9px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    font-size:12px;
+}
+
+.edit-btn{
+    background:#d5fffb;
+    color:#008080;
+}
+
+.delete-btn{
+    background:#ffe1e1;
+    color:#d11a1a;
+}
+
+/* ================= FLOATING BUTTON ================= */
+
+.floating-btn{
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    width:65px;
+    height:65px;
+    border:none;
+    border-radius:50%;
+    background:#00b7b7;
+    color:white;
+    font-size:34px;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,183,183,0.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .contentnnav{
+        flex-direction:column;
+    }
+
+    .left-nav{
+        width:100%;
+    }
+
+    .left-nav ul{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+        gap:12px;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .top{
+        flex-direction:column;
+        gap:18px;
+    }
+
+    .ex-logo{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .contentnnav{
+        padding:15px;
+    }
+
+    .listed-stuff{
+        padding:15px;
+    }
+
+}

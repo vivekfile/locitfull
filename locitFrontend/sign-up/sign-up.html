@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up to Locit</title>
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="navbar">
+                <div class="logo-image">
+                    <img src="/assets/logo1.png" alt="Locit Logo">
+                </div>
+                <div class="sign-up-option">
+                    <a href="/auth/login.html">Already have an account? <span>Sign in</span></a>
+                </div>
+
+
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="main-card">
+                <div class="welcome-ist">
+                    <h1>Create Your Account 🚀</h1>
+                    <div class="istr">
+                        <p>Buy and sell products Locally.</p>
+                    </div>
+                </div>
+                <div class="auth-form">
+                    <div class="name-phone">
+                        <div class="full-name">
+                            <div><label>Full Name</label></div>
+                            <div><input type="text" name="name" required placeholder="Enter your full name"></div>
+                        </div>
+                        <div class="full-name">
+                            <div><label>Phone Number</label></div>
+                            <div><input type="number" name="number" required placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-cred">
+                        <div class="email">
+                            <label>Email</label>
+                            <div class="email-input">
+                                <input type="email" name="email" required placeholder="Enter your email">
+                            </div>
+                        </div>
+
+                        <div class="password">
+                            <label>Password</label>
+                            <div class="password-input">
+                                <input type="password" name="password" required placeholder="Enter your password">
+                            </div>
+                        </div>
+
+                        <div class="password">
+                            <label>I want to</label>
+                            <div class="password-input">
+                                <select name="role" id="signupRole">
+                                    <option value="BUYER">Buy from nearby shops</option>
+                                    <option value="SELLER">Sell products from my shop</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cnf-password">
+                            <label>Confirm Password</label>
+                            <div class="cnf-password-input">
+                                <input type="password" name="cnf-password" required placeholder="Confirm your password">
+                            </div>
+                        </div>
+                        <div class="options">
+                            <label>
+                                <input type="checkbox" class="remember"> I agree to the <a href="#" class="linktandc">Terms and
+                                    Conditions</a>
+                            </label>
+                        </div>
+                        <div class="login-button">
+                            <button type="button" id="registerBtn">Register</button>
+                        </div>
+                        <p id="signupError" style="display:none;color:#c0392b;margin-top:12px;"></p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="/js/config.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/signup.js"></script>
+</body>
+
+</html>
